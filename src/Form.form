@@ -56,6 +56,7 @@
           </grid>
         </constraints>
         <properties>
+          <editable value="false"/>
           <lineWrap value="true"/>
           <text value="Scen 2 Text"/>
           <visible value="false"/>
@@ -69,6 +70,7 @@
           </grid>
         </constraints>
         <properties>
+          <editable value="false"/>
           <lineWrap value="true"/>
           <text value="Scen 1 Text"/>
           <visible value="false"/>
