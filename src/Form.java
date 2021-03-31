@@ -28,6 +28,14 @@ public class Form {
      * Constructor of the Form class.
      */
     public Form() {
+
+        // set margins for textAreas
+        Explanation.setMargin(new Insets(15,15,15,15));
+        Scen1.setMargin(new Insets(15,15,15,15));
+        Scen2.setMargin(new Insets(15,15,15,15));
+
+
+
         option1Button.addActionListener(new ActionListener() {
             @Override
             /**
@@ -191,7 +199,7 @@ public class Form {
         myFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
         // set the dimensions of the frame
-        myFrame.setPreferredSize(new Dimension(450, 450));
+        myFrame.setPreferredSize(new Dimension(500, 450));
 
         // put everything in the frame and make it visible
         myFrame.pack();
