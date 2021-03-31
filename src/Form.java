@@ -124,8 +124,9 @@ public class Form {
 
         // initialize options array with different scenarios, explanations, options and resources of simulation
         options[ENDING_RESOURCES] = new Explanations(0, "Call the National Suicide Prevention Lifeline " +
-                "(Lifeline) at 1-800-273-TALK (8255), or text the Crisis Text Line (text HELLO to 741741)\n" +
-                "Call 911 in an emergency \nVisit https://adaa.org/ for guidance on treatment and management of anxiety");
+                "(Lifeline) at 1-800-273-TALK (8255), or text the Crisis Text Line (text HELLO to 741741).\n" +
+                "Call 911 in an emergency.\nVisit https://adaa.org/ for guidance on treatment and management of " +
+                "anxiety.\n\nPress \"Continue\" to restart the simulation.");
 
         options[0] = new Scenario("At school, you notice your friend Katy has become irritable lately and is " +
                 "struggling to focus. You have never seen her act like this. She seems nervous, but you can’t think " +
