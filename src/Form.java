@@ -140,7 +140,7 @@ public class Form {
                 "struggling to focus. You have never seen her act like this. She seems nervous, but you can’t think " +
                 "of anything going on at school that would be contributing to these behaviors. You know she always " +
                 "seems to stress about things, but it seems worse than before. As her friend, what should you do?",
-                "Ignore it. Maybe she is just nervous about a test coming up in a few weeks. ",
+                "Maybe she is just nervous about a test coming up in a few weeks. You decide to leave her alone so she has time to study.",
                 1,
                 "Approach her and ask if everything is going okay, as you’ve noticed she seems to be on edge.",
                 5);
@@ -178,7 +178,7 @@ public class Form {
                 "has been experiencing. Katy reminds you that she has always been worrisome, but lately it seems " +
                 "to have gotten worse. She says she feels like she can not control her thoughts or feelings of " +
                 "worry and feels anxious most of the time. What is your next step?",
-                "Tell her to relax. She has nothing to worry about.",
+                "Tell her to try to relax. Let her know that she has nothing to worry about.",
                 7,
                 "Offer to look up resources that will guide her to get help for the issues she is struggling with.",
                 8);
