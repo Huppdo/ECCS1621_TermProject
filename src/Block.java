@@ -23,4 +23,10 @@ public abstract class Block {
      * @return The string containing the main text of the block.
      */
     public abstract String getMainText();
+
+    /**
+     * Getter for the image path for the current screen
+     * @return The string containing the main image of the block.
+     */
+    public abstract String getImagePath();
 }

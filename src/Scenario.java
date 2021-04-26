@@ -13,6 +13,8 @@ public class Scenario extends Block{
     private String option2;
     private int goTo2;
 
+    private String imagePath;
+
     /**
      * Constructor of the Scenario class.
      * @param scenario The string containing the text describing the scenario.
@@ -27,6 +29,7 @@ public class Scenario extends Block{
         this.goTo1 = goTo1;
         this.option2 = option2;
         this.goTo2 = goTo2;
+        this.imagePath = "";
     }
 
     /**
@@ -50,6 +53,14 @@ public class Scenario extends Block{
      * @return The string containing the actual scenario text.
      */
     public String getMainText() {
+        return scenario;
+    }
+
+    /**
+     * Getter for the image of the scenario.
+     * @return The string containing the actual scenario text.
+     */
+    public String getImagePath() {
         return scenario;
     }
 

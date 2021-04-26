@@ -6,18 +6,22 @@
  * @since 3/30/21
  * @author Dominic Hupp, Wyatt Fisher and Will Klepinger
  */
+
 public class Explanations extends Block{
     private int next;
     private String string;
+
+    private String imagePath;
 
     /**
      * Constructor of the Explanations class.
      * @param next The int of the next item to be displayed after the explanation.
      * @param string The string containing the actual explanation text.
      */
-    public Explanations(int next, String string) {
+    public Explanations(int next, String string, String imagePath) {
         this.next = next;
         this.string = string;
+        this.imagePath = imagePath;
     }
 
     /**
@@ -42,5 +46,13 @@ public class Explanations extends Block{
      */
     public int getSecondNext() {
         return next;
+    }
+
+    /**
+     * Getter for the image of the scenario.
+     * @return The string containing the actual scenario text.
+     */
+    public String getImagePath() {
+        return imagePath;
     }
 }

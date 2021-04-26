@@ -18,6 +18,7 @@ public class Form {
     private JButton option1Button;
     private JButton option2Button;
     private JPanel panel1;
+    private JLabel ImageLabel;
 
     // variable declarations
     private static Block[] options;
@@ -33,8 +34,6 @@ public class Form {
         Explanation.setMargin(new Insets(15,15,15,15));
         Scen1.setMargin(new Insets(15,15,15,15));
         Scen2.setMargin(new Insets(15,15,15,15));
-
-
 
         option1Button.addActionListener(new ActionListener() {
             @Override
@@ -89,9 +88,18 @@ public class Form {
                 Scen2.setText(((Scenario) options[current]).getOption2());
                 Scen1.setVisible(true);
                 Scen2.setVisible(true);
+                ImageLabel.setVisible(false);
             } else {
                 Scen1.setVisible(false);
                 Scen2.setVisible(false);
+
+                String imgPath = options[current].getImagePath();
+                if (!imgPath.isBlank()) {
+                    ImageLabel.setIcon(new javax.swing.ImageIcon(new ImageIcon(this.getClass().getResource(imgPath)).getImage().getScaledInstance(25, 25, Image.SCALE_SMOOTH)));
+                    ImageLabel.setVisible(true);
+                } else {
+                    ImageLabel.setVisible(false);
+                }
             }
         }
     }
@@ -134,7 +142,7 @@ public class Form {
         options[ENDING_RESOURCES] = new Explanations(0, "Call the National Suicide Prevention Lifeline " +
                 "(Lifeline) at 1-800-273-TALK (8255), or text the Crisis Text Line (text HELLO to 741741).\n" +
                 "Call 911 in an emergency.\nVisit https://adaa.org/ for guidance on treatment and management of " +
-                "anxiety.\n\nPress \"Continue\" to restart the simulation.");
+                "anxiety.\n\nPress \"Continue\" to restart the simulation.", "");
 
         options[0] = new Scenario("At school, you notice your friend Katy has become irritable lately and is " +
                 "struggling to focus. You have never seen her act like this. She seems nervous, but you can’t think " +
@@ -147,7 +155,7 @@ public class Form {
 
         options[1] = new Explanations(2, "Individuals may begin to act differently than normal and begin " +
                 "to display symptoms that could stem from a mental health problem. Recognizing early symptoms is an " +
-                "important first step in helping someone who is struggling with their mental health.");
+                "important first step in helping someone who is struggling with their mental health.", "images/bad.png");
 
         options[2] = new Scenario("The next day, Katy again appears to be struggling to focus in class " +
                 "and looks like she has not slept. You are still unable to come up with a reason for her " +
@@ -161,17 +169,17 @@ public class Form {
 
         options[3] = new Explanations(ENDING_RESOURCES, "Good job! Approaching someone with your concerns " +
                 "might allow them to open up about the way they’ve been feeling and start the process of getting " +
-                "them help. Offering resources is a great way to get the person the appropriate help.");
+                "them help. Offering resources is a great way to get the person the appropriate help.", "images/good.png");
 
         options[4] = new Explanations(ENDING_RESOURCES, "People who are struggling with a mental illness " +
                 "may not be willing to search for help on their own. It is important that you initiate the " +
                 "conversation. Being a good mental health first aider and approaching the person and " +
-                "offering possible resources can lead to a better outcome.");
+                "offering possible resources can lead to a better outcome.", "images/bad.png");
 
         options[5] = new Explanations(6, "Good job! You noticed that something appears to be " +
                 "affecting Katy’s mental health and noticed how the symptoms have worsened as of late. As " +
                 "a mental health first aider, it is important to approach the person to let them know you " +
-                "are concerned. Be willing to listen, judgement free.");
+                "are concerned. Be willing to listen, judgement free.", "images/good.png");
 
         options[6] = new Scenario("You approach Katy and ask if it is okay if you talk to her about what " +
                 "you’ve noticed. She is a close friend of yours so she is willing to open up about what she " +
@@ -186,10 +194,10 @@ public class Form {
         options[7] = new Explanations(ENDING_RESOURCES, "Sometimes it is difficult to understand the thoughts " +
                 "and feelings of someone struggling with a mental illness. Reaching out first would be the better " +
                 "option. Guiding them in the right direction using resources would be the best option to make sure " +
-                "someone like Katy gets the help they need.\n");
+                "someone like Katy gets the help they need.\n", "images/bad.png");
 
         options[8] = new Explanations(ENDING_RESOURCES, "Good job! Using resources to find the necessary help " +
-                "for someone like Katy can be very beneficial to their mental health.\n");
+                "for someone like Katy can be very beneficial to their mental health.\n", "images/good.png");
 
         // makes the frame and attach the panel to it
         JFrame myFrame = new JFrame("Mental Health Resources Simulation");
