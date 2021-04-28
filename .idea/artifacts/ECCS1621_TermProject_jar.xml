@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="ECCS1621_TermProject:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/ECCS1621_TermProject_jar</output-path>
+    <root id="archive" name="ECCS1621_TermProject.jar">
+      <element id="module-output" name="ECCS1621_TermProject" />
+    </root>
+  </artifact>
+</component>
