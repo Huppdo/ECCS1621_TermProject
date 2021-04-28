@@ -7,6 +7,10 @@
     </constraints>
     <properties>
       <background color="-16750149"/>
+      <focusCycleRoot value="false"/>
+      <maximumSize width="500" height="450"/>
+      <minimumSize width="500" height="450"/>
+      <preferredSize width="500" height="450"/>
     </properties>
     <border type="none"/>
     <children>
@@ -33,7 +37,7 @@
       </component>
       <component id="f077a" class="javax.swing.JTextArea" binding="Explanation">
         <constraints>
-          <grid row="2" column="0" row-span="1" col-span="2" vsize-policy="2" hsize-policy="2" anchor="0" fill="3" indent="0" use-parent-layout="false">
+          <grid row="2" column="0" row-span="1" col-span="2" vsize-policy="2" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false">
             <preferred-size width="150" height="75"/>
           </grid>
         </constraints>
@@ -48,7 +52,7 @@
       </component>
       <component id="5e4b5" class="javax.swing.JTextArea" binding="Scen2">
         <constraints>
-          <grid row="3" column="1" row-span="1" col-span="1" vsize-policy="6" hsize-policy="0" anchor="0" fill="3" indent="0" use-parent-layout="false">
+          <grid row="3" column="1" row-span="1" col-span="1" vsize-policy="6" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false">
             <preferred-size width="220" height="50"/>
           </grid>
         </constraints>
@@ -64,7 +68,7 @@
       </component>
       <component id="de09b" class="javax.swing.JTextArea" binding="Scen1">
         <constraints>
-          <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="6" hsize-policy="6" anchor="0" fill="3" indent="0" use-parent-layout="false">
+          <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="6" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false">
             <preferred-size width="220" height="50"/>
           </grid>
         </constraints>
@@ -80,7 +84,7 @@
       </component>
       <component id="8560a" class="javax.swing.JLabel">
         <constraints>
-          <grid row="0" column="0" row-span="1" col-span="2" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+          <grid row="0" column="0" row-span="1" col-span="2" vsize-policy="0" hsize-policy="1" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
         </constraints>
         <properties>
           <enabled value="true"/>
@@ -90,7 +94,7 @@
       </component>
       <component id="d70d7" class="javax.swing.JLabel" binding="ImageLabel">
         <constraints>
-          <grid row="1" column="0" row-span="1" col-span="2" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+          <grid row="1" column="0" row-span="1" col-span="2" vsize-policy="0" hsize-policy="1" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
         </constraints>
         <properties>
           <opaque value="true"/>

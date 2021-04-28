@@ -9,6 +9,8 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.awt.event.ComponentAdapter;
+import java.awt.event.ComponentEvent;
 
 public class Form {
     // fields from the Form.form GUI
@@ -208,6 +210,9 @@ public class Form {
 
         // set the dimensions of the frame
         myFrame.setPreferredSize(new Dimension(500, 450));
+        myFrame.setMaximumSize(new Dimension(500, 450));
+        myFrame.setMinimumSize(new Dimension(500, 450));
+        myFrame.setResizable(false);
 
         // put everything in the frame and make it visible
         myFrame.pack();
